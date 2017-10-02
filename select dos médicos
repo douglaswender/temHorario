@@ -1,0 +1,1 @@
+SELECT * FROM medico a INNER JOIN medico_clinica b ON a.idMedico = b.idMedico INNER JOIN clinica c ON b.idClinica = c.idClinica WHERE c.idClinica=$_GET['idClinica']
